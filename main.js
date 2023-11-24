@@ -148,7 +148,7 @@ function showGameOverScreen()
     // Reiniciar el juego cuando se haga clic en el botón "Restart"
     document.getElementById('restart-button').addEventListener('click', function() 
     {
-        resetGame();
+        restartGame();
     });
 }
 
