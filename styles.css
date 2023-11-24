@@ -1,72 +1,52 @@
 body {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
-    margin: 0;
+    background-color: #282c34; /* Color de fondo oscuro */
     font-family: 'Press Start 2P';
+    margin: 0;
+    padding: 20px;
+    color: #61dafb; /* Color de texto principal */
+}
+
+h1, h4 {
+    text-align: center;
+    color: #e44d26;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    clear: right;
 }
 
 #title {
     font-size: 24px;
     margin-bottom: 20px;
+    color: #61dafb;
+    text-align: center;
 }
 
 #game-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-h1, h4, #game-over h2 {
-    font-family: 'Press Start 2P', cursive;
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-#restart-button {
-    font-family: 'Press Start 2P', cursive;
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #e44d26;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    outline: none;
-}
-
-#restart-button:hover {
-    background-color: #333;
-}
-
-h1, h4 {
-    text-align: center;
-    color: #333;
+    width: 60%;
+    float: right;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
 canvas {
-    border: 5px solid #000;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #333; /* Color de fondo del lienzo del juego */
 }
 
 #health-container {
     position: relative;
     font-size: 18px;
     margin-top: 10px;
-}
-
-#health {
-    color: #e44d26; /* Color rojo */
+    color: #e44d26;
 }
 
 #game-over {
@@ -88,6 +68,7 @@ canvas {
 #game-over h2 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: #e44d26;
 }
 
 #restart-button {
@@ -103,4 +84,6 @@ canvas {
 
 #restart-button:hover {
     background-color: #333;
+    transform: scale(1.1);
+    transition: background-color 0.3s, transform 0.3s;
 }
