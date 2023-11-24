@@ -1,55 +1,63 @@
-body {
+body 
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    background-color: #282c34; /* Color de fondo oscuro */
+    background-color: #282c34;
     font-family: 'Press Start 2P';
     margin: 0;
     padding: 20px;
-    color: #61dafb; /* Color de texto principal */
+    color: #61dafb;
 }
 
-h1, h4 {
+h1, h4 
+{
     text-align: center;
     color: #e44d26;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-    clear: right;
+p, h1, h2, h3, h4, h5, h6 
+{
+    clear: right;   /*Con esto se asegura que todo el texto se encuentre en una posición fijada*/
 }
 
-#title {
+#title 
+{
     font-size: 24px;
     margin-bottom: 20px;
     color: #61dafb;
     text-align: center;
 }
 
-#game-container {
+#game-container
+{
     width: 60%;
     float: right;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-canvas {
+canvas
+{
     width: 100%;
     height: auto;
     display: block;
-    background-color: #333; /* Color de fondo del lienzo del juego */
+    background-color: #333; /* Para diferenciarlo del color del fondo del sitio */
 }
 
-#health-container {
+#health-container 
+{
     position: relative;
     font-size: 18px;
     margin-top: 10px;
     color: #e44d26;
 }
 
-#game-over {
+#game-over 
+{
     position: fixed;
     top: 0;
     left: 0;
@@ -65,13 +73,15 @@ canvas {
     display: none;
 }
 
-#game-over h2 {
+#game-over h2 
+{
     font-size: 36px;
     margin-bottom: 20px;
     color: #e44d26;
 }
 
-#restart-button {
+#restart-button 
+{
     padding: 10px 20px;
     font-size: 18px;
     background-color: #e44d26;
@@ -82,7 +92,8 @@ canvas {
     outline: none;
 }
 
-#restart-button:hover {
+#restart-button:hover 
+{
     background-color: #333;
     transform: scale(1.1);
     transition: background-color 0.3s, transform 0.3s;
