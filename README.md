@@ -1,5 +1,3 @@
 # Juego ML con Objetos
 
-Este repositorio muestra un código basado en HTML, CSS y Javascript para hacer un sitio que contiene un juego simple, donde el jugador tiene que disparar a los enemigos que pueda. </br>
-Usa también el ObjectDetector de ML5.js para reemplazar el tipo de control tradicional por uno en el que dependiendo de un objeto en concreto la pueda realizar (Usar una taza permite disparar por ejemplo)
-Tener en cuenta que el ObjectDetector está integrado en el código pero todavía no se conecta con el código que representa el videojuego en sí. Es uno de los puntos que hay que realizar a continuación.
+Este repositorio presenta un código basado en HTML, CSS y Javascript para crear un sitio que incluye un juego simple. En este juego, el jugador debe disparar a los enemigos que aparecen. Se utiliza el ObjectDetector de ML5.js para introducir un enfoque de control diferente. Ahora, el jugador puede realizar acciones específicas dependiendo de objetos reconocidos. Por ejemplo, usar un celular como objeto permitiría realizar disparos.
